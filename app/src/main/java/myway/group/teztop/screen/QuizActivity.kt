@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_quiz.*
+import kotlinx.android.synthetic.main.activity_quiz.imageback
+import kotlinx.android.synthetic.main.activity_sciences.*
 import myway.group.teztop.R
 import myway.group.teztop.models.ScienceModel
 
@@ -17,6 +19,9 @@ class QuizActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_quiz)
 
+        imageback.setOnClickListener{
+            finish()
+        }
         science = intent.getSerializableExtra("extra") as ScienceModel
 
         btnA.setOnClickListener {

@@ -64,7 +64,7 @@
                     android:layout_height="150dp"
                     android:layout_marginTop="8dp"
                     android:adjustViewBounds="true"
-                    android:src="@drawable/main" />
+                    android:src="@drawable/teztop" />
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
