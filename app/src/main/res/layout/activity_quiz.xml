@@ -55,7 +55,7 @@
                     android:layout_height="wrap_content"
                     android:text="Bu qanday dastur?"
                     android:textColor="@color/black"
-                    android:textSize="16sp"
+                    android:textSize="22sp"
                     android:textStyle="bold" />
 
                 <ImageView
@@ -113,6 +113,33 @@
             app:backgroundTint="@color/white"
             app:cornerRadius="16dp" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Javoblar"
+                android:textColor="@color/white"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/results"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+        </LinearLayout>
     </LinearLayout>
 
 </FrameLayout>

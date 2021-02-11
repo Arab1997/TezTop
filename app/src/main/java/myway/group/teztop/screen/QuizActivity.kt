@@ -63,7 +63,7 @@ class QuizActivity : AppCompatActivity() {
         setQuiz()
     }
 
-    fun setQuiz() {
+    fun setQuiz() =
         if (index < science.quizList.count()) {  //index countan kichkina bolsa ishlavursin
             val quiz = science.quizList[index]
             tvQuiz.text = quiz.title
@@ -78,7 +78,8 @@ class QuizActivity : AppCompatActivity() {
             btnC.text = quiz.answerC
             btnD.text = quiz.answerD
         }else{
+
+            //results.text = "Siz javobingiz ${science.quizList.count()} ta savoldan ${correctCount}"
             Toast.makeText(this, "Siz ${science.quizList.count()} ta savoldan ${correctCount} ta siga to'g'ri javob berdingiz!", Toast.LENGTH_LONG).show()
         }
-    }
     }
